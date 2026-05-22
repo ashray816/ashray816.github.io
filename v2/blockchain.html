@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blockchain Research | Ashray Saluja</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#1d4ed8,#0f172a);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+header h1{
+    font-size:3.5rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#dbeafe;
+    max-width:850px;
+    margin:auto;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:white;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    margin:0 18px;
+    text-decoration:none;
+    color:#1d4ed8;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#0f172a;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+/* INTRO CARD */
+
+.intro-card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    margin-bottom:45px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+.intro-card h2{
+    color:#0f172a;
+    margin-bottom:18px;
+}
+
+.intro-card p{
+    color:#555;
+    margin-bottom:18px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    font-size:2.2rem;
+    color:#0f172a;
+    margin-bottom:30px;
+}
+
+/* BLOG GRID */
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* BLOG CARD */
+
+.blog-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    border:1px solid #e5e7eb;
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 16px 32px rgba(0,0,0,0.14);
+}
+
+/* BLOG BANNER */
+
+.blog-banner{
+    height:200px;
+    background:linear-gradient(135deg,#2563eb,#0f172a);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+    padding:20px;
+}
+
+/* BLOG CONTENT */
+
+.blog-content{
+    padding:30px;
+}
+
+.blog-tag{
+    display:inline-block;
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:0.8rem;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.blog-content h3{
+    color:#0f172a;
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.blog-content p{
+    color:#555;
+    margin-bottom:22px;
+}
+
+.blog-btn{
+    display:inline-block;
+    background:#1d4ed8;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.blog-btn:hover{
+    background:#0f172a;
+}
+
+/* UPCOMING SECTION */
+
+.upcoming{
+    margin-top:60px;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+.upcoming h2{
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+.upcoming ul{
+    padding-left:20px;
+}
+
+.upcoming li{
+    margin-bottom:12px;
+    color:#444;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+    margin-top:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+    }
+
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>Blockchain Research</h1>
+
+    <p>
+        Research articles and educational resources on Bitcoin,
+        blockchain architecture, cryptocurrency systems,
+        mining, Merkle Trees, and decentralized technologies.
+    </p>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="networking.html">Networking</a>
+    <a href="cybersecurity.html">Cybersecurity</a>
+
+</nav>
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <!-- INTRO -->
+
+    <div class="intro-card">
+
+        <h2>About Blockchain Research</h2>
+
+        <p>
+            Blockchain technology is one of the most revolutionary innovations
+            in cybersecurity, decentralized finance, and digital systems.
+        </p>
+
+        <p>
+            This section explores Bitcoin architecture,
+            transaction validation, mining,
+            Proof-of-Work, Merkle Trees,
+            and blockchain infrastructure fundamentals.
+        </p>
+
+    </div>
+
+    <!-- BLOG SECTION -->
+
+    <h2 class="section-title">
+        Blockchain Articles
+    </h2>
+
+    <div class="blog-grid">
+
+        <!-- BLOG 1 -->
+
+        <div class="blog-card">
+
+            <div class="blog-banner">
+
+                Introduction to Blockchain & Bitcoin
+
+            </div>
+
+            <div class="blog-content">
+
+                <span class="blog-tag">
+                    Bitcoin
+                </span>
+
+                <h3>
+                    Understanding Blockchain Technology
+                </h3>
+
+                <p>
+                    Learn how Bitcoin blocks,
+                    transactions,
+                    mining,
+                    Merkle Roots,
+                    and blockchain architecture work together.
+                </p>
+
+                <a class="blog-btn"
+                   href="../blog/blockchain.html">
+
+                    Read Article →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- UPCOMING ARTICLES -->
+
+    <div class="upcoming">
+
+        <h2>
+            Upcoming Blockchain Research Topics
+        </h2>
+
+        <ul>
+
+            <li>Ethereum & Smart Contracts</li>
+
+            <li>Proof-of-Stake vs Proof-of-Work</li>
+
+            <li>Blockchain Security Risks</li>
+
+            <li>Cryptocurrency Wallets & Private Keys</li>
+
+            <li>DeFi (Decentralized Finance)</li>
+
+            <li>Consensus Mechanisms</li>
+
+            <li>51% Attacks in Blockchain</li>
+
+            <li>NFT Infrastructure & Security</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 Ashray Saluja | Blockchain Research Portfolio
+
+</footer>
+
+</body>
+
+</html>
