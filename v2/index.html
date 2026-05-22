@@ -29,7 +29,7 @@ header{
     background: linear-gradient(135deg, #0f172a, #1d4ed8);
     color:white;
     text-align:center;
-    padding:90px 20px;
+    padding:100px 20px;
 }
 
 header h1{
@@ -40,10 +40,10 @@ header h1{
 header p{
     font-size:1.2rem;
     color:#dbeafe;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
-.button{
+.hero-btn{
     display:inline-block;
     background:white;
     color:#1d4ed8;
@@ -54,7 +54,7 @@ header p{
     transition:0.3s ease;
 }
 
-.button:hover{
+.hero-btn:hover{
     background:#dbeafe;
 }
 
@@ -82,11 +82,11 @@ nav a:hover{
     color:#0f172a;
 }
 
-/* CONTAINER */
+/* MAIN CONTAINER */
 
 .container{
     max-width:1200px;
-    margin:50px auto;
+    margin:60px auto;
     padding:0 20px;
 }
 
@@ -105,105 +105,110 @@ nav a:hover{
     margin-bottom:15px;
 }
 
-/* BLOG SECTION */
+/* CATEGORY SECTION */
 
-.blog-section{
-    margin-top:60px;
-}
-
-.blog-section h2{
-    font-size:2.2rem;
-    margin-bottom:30px;
+.section-title{
+    font-size:2.3rem;
     color:#0f172a;
+    margin-bottom:35px;
 }
 
-.blog-grid{
+.category-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     gap:30px;
 }
 
-.blog-card{
+.category-card{
     background:white;
-    border-radius:20px;
+    border-radius:22px;
     overflow:hidden;
-    box-shadow:0 6px 20px rgba(0,0,0,0.08);
-    transition:transform 0.3s ease,
-               box-shadow 0.3s ease;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+    transition:0.3s ease;
     border:1px solid #e5e7eb;
 }
 
-.blog-card:hover{
+.category-card:hover{
     transform:translateY(-10px);
-    box-shadow:0 14px 30px rgba(0,0,0,0.14);
+    box-shadow:0 16px 32px rgba(0,0,0,0.14);
 }
 
-/* BLOG BANNERS */
+/* BANNERS */
 
-.blog-banner{
-    height:190px;
+.category-banner{
+    height:200px;
     display:flex;
     align-items:center;
     justify-content:center;
     color:white;
-    font-size:1.5rem;
+    font-size:1.7rem;
     font-weight:bold;
     text-align:center;
     padding:20px;
 }
 
-.banner1{
+.blockchain-banner{
     background:linear-gradient(135deg,#1d4ed8,#0f172a);
 }
 
-.banner2{
+.network-banner{
     background:linear-gradient(135deg,#059669,#022c22);
 }
 
-.banner3{
+.cyber-banner{
     background:linear-gradient(135deg,#7c3aed,#312e81);
 }
 
-/* BLOG CONTENT */
+/* CATEGORY CONTENT */
 
-.blog-content{
-    padding:28px;
+.category-content{
+    padding:30px;
 }
 
-.blog-tag{
+.category-tag{
     display:inline-block;
     background:#dbeafe;
     color:#1d4ed8;
-    font-size:0.8rem;
     padding:6px 14px;
     border-radius:999px;
-    margin-bottom:15px;
+    font-size:0.8rem;
     font-weight:bold;
+    margin-bottom:18px;
 }
 
-.blog-content h3{
+.category-content h3{
+    margin-bottom:14px;
     color:#0f172a;
-    margin-bottom:12px;
-    font-size:1.3rem;
+    font-size:1.4rem;
 }
 
-.blog-content p{
+.category-content p{
     color:#555;
     margin-bottom:22px;
 }
 
-.blog-btn{
+.topic-list{
+    margin-bottom:25px;
+    padding-left:20px;
+}
+
+.topic-list li{
+    margin-bottom:10px;
+    color:#444;
+}
+
+.category-btn{
     display:inline-block;
     background:#1d4ed8;
     color:white;
     text-decoration:none;
-    padding:12px 20px;
+    padding:12px 22px;
     border-radius:10px;
     font-weight:bold;
     transition:0.3s ease;
 }
 
-.blog-btn:hover{
+.category-btn:hover{
     background:#0f172a;
 }
 
@@ -213,7 +218,7 @@ footer{
     text-align:center;
     padding:40px;
     color:#666;
-    margin-top:40px;
+    margin-top:60px;
 }
 
 /* MOBILE */
@@ -233,7 +238,7 @@ footer{
         margin:8px;
     }
 
-    .blog-grid{
+    .category-grid{
         grid-template-columns:1fr;
     }
 
@@ -255,8 +260,8 @@ footer{
         Cybersecurity Researcher • Digital Forensics • Blockchain • Networking
     </p>
 
-    <a class="button" href="#blogs">
-        Explore Articles
+    <a class="hero-btn" href="#categories">
+        Explore Research Categories
     </a>
 
 </header>
@@ -266,13 +271,13 @@ footer{
 <nav>
 
     <a href="#about">About</a>
-    <a href="#blogs">Blogs</a>
+    <a href="#categories">Categories</a>
     <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
 
 </nav>
 
-<!-- MAIN CONTAINER -->
+<!-- MAIN CONTENT -->
 
 <div class="container">
 
@@ -283,67 +288,67 @@ footer{
         <h2>About Me</h2>
 
         <p>
-            I am a cybersecurity and digital forensics professional with strong
-            interests in blockchain technology, networking, public DNS
-            infrastructure, cryptocurrency security, and emerging cyber threats.
+            I am a cybersecurity and digital forensics researcher with interests
+            in blockchain systems, networking, DNS infrastructure,
+            cryptocurrency security, and emerging cyber threats.
         </p>
 
         <p>
-            My research focuses on cybersecurity fundamentals, blockchain systems,
-            network protocols, digital investigations, and security analysis.
+            My work focuses on practical cybersecurity concepts,
+            blockchain architecture, networking fundamentals,
+            and technical security analysis.
         </p>
 
     </div>
 
-    <!-- PROJECTS -->
+    <!-- CATEGORY SECTION -->
 
-    <div class="card">
+    <div id="categories">
 
-        <h2>Projects & Research</h2>
+        <h2 class="section-title">
+            Research Categories
+        </h2>
 
-        <p>
-            Technical projects and cybersecurity research involving networking,
-            blockchain technology, DNS infrastructure, digital forensics,
-            and system security analysis.
-        </p>
+        <div class="category-grid">
 
-    </div>
+            <!-- BLOCKCHAIN -->
 
-    <!-- BLOG SECTION -->
+            <div class="category-card">
 
-    <div class="blog-section" id="blogs">
-
-        <h2>Latest Cybersecurity & Blockchain Blogs</h2>
-
-        <div class="blog-grid">
-
-            <!-- BLOG 1 -->
-
-            <div class="blog-card">
-
-                <div class="blog-banner banner1">
-                    Blockchain & Bitcoin
+                <div class="category-banner blockchain-banner">
+                    Blockchain & Cryptocurrency
                 </div>
 
-                <div class="blog-content">
+                <div class="category-content">
 
-                    <span class="blog-tag">
+                    <span class="category-tag">
                         Blockchain
                     </span>
 
                     <h3>
-                        Introduction to Blockchain and Bitcoin
+                        Blockchain Research & Bitcoin Architecture
                     </h3>
 
                     <p>
-                        Learn how Bitcoin blocks, mining, Merkle Roots,
-                        transactions, Proof-of-Work, and blockchain architecture work together.
+                        Explore Bitcoin block structure,
+                        mining, Merkle Roots, Proof-of-Work,
+                        and cryptocurrency fundamentals.
                     </p>
 
-                    <a class="blog-btn"
-                       href="blog/blockchain.html">
+                    <ul class="topic-list">
 
-                        Read Article →
+                        <li>Bitcoin Block Architecture</li>
+
+                        <li>Merkle Root & Transactions</li>
+
+                        <li>Proof-of-Work Mining</li>
+
+                    </ul>
+
+                    <a class="category-btn"
+                       href="blockchain.html">
+
+                        Explore Blockchain →
 
                     </a>
 
@@ -351,33 +356,45 @@ footer{
 
             </div>
 
-            <!-- BLOG 2 -->
+            <!-- NETWORKING -->
 
-            <div class="blog-card">
+            <div class="category-card">
 
-                <div class="blog-banner banner2">
-                    Networking & Ports
+                <div class="category-banner network-banner">
+                    Networking & Infrastructure
                 </div>
 
-                <div class="blog-content">
+                <div class="category-content">
 
-                    <span class="blog-tag">
+                    <span class="category-tag">
                         Networking
                     </span>
 
                     <h3>
-                        Understanding Network Ports in Cybersecurity
+                        Networking, DNS & Internet Infrastructure
                     </h3>
 
                     <p>
-                        Explore TCP/UDP ports, HTTP, HTTPS, SSH,
-                        DNS, RDP, databases, and essential network security concepts.
+                        Learn about TCP/IP ports,
+                        DNS infrastructure,
+                        public DNS services,
+                        and networking security concepts.
                     </p>
 
-                    <a class="blog-btn"
-                       href="blog/network-ports.html">
+                    <ul class="topic-list">
 
-                        Read Article →
+                        <li>TCP & UDP Ports</li>
+
+                        <li>Google DNS vs Cloudflare DNS</li>
+
+                        <li>Network Security Basics</li>
+
+                    </ul>
+
+                    <a class="category-btn"
+                       href="networking.html">
+
+                        Explore Networking →
 
                     </a>
 
@@ -385,34 +402,44 @@ footer{
 
             </div>
 
-            <!-- BLOG 3 -->
+            <!-- CYBERSECURITY -->
 
-            <div class="blog-card">
+            <div class="category-card">
 
-                <div class="blog-banner banner3">
-                    DNS & Cybersecurity
+                <div class="category-banner cyber-banner">
+                    Cybersecurity & Digital Forensics
                 </div>
 
-                <div class="blog-content">
+                <div class="category-content">
 
-                    <span class="blog-tag">
-                        DNS Security
+                    <span class="category-tag">
+                        Cybersecurity
                     </span>
 
                     <h3>
-                        Google DNS vs Cloudflare DNS
+                        Cybersecurity Research & Security Analysis
                     </h3>
 
                     <p>
-                        Understand 8.8.8.8 and 1.1.1.1,
-                        DNS resolution, internet infrastructure,
-                        privacy, and DNS security.
+                        Research involving digital forensics,
+                        cyber threats, SOC operations,
+                        malware analysis, and security concepts.
                     </p>
 
-                    <a class="blog-btn"
-                       href="blog/google-vs-cloudflare-dns.html">
+                    <ul class="topic-list">
 
-                        Read Article →
+                        <li>Threat Intelligence</li>
+
+                        <li>Digital Forensics</li>
+
+                        <li>Security Analysis</li>
+
+                    </ul>
+
+                    <a class="category-btn"
+                       href="cybersecurity.html">
+
+                        Explore Cybersecurity →
 
                     </a>
 
