@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Understanding Network Ports in Cybersecurity | Ashray Blog</title>
+
+  <meta name="description" content="Learn about well-known ports, registered ports, dynamic ports, TCP/UDP protocols, and their role in cybersecurity and networking.">
+
+  <meta name="keywords" content="Network Ports, TCP, UDP, Cybersecurity, Common Ports, HTTP, HTTPS, DNS, SSH">
+
+  <meta name="author" content="Ashray Saluja">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f5f7fb;
+      color:#222;
+      line-height:1.8;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:40px auto;
+      background:#fff;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .header{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .header h1{
+      font-size:42px;
+      margin-bottom:10px;
+      color:#0f172a;
+    }
+
+    .header p{
+      color:#555;
+      font-size:18px;
+    }
+
+    h2{
+      margin-top:40px;
+      margin-bottom:15px;
+      border-left:5px solid #2563eb;
+      padding-left:12px;
+      color:#0f172a;
+    }
+
+    p{
+      margin-bottom:18px;
+    }
+
+    ul{
+      margin-left:25px;
+      margin-bottom:20px;
+    }
+
+    li{
+      margin-bottom:10px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:25px 0;
+      overflow:hidden;
+      border-radius:10px;
+    }
+
+    table th{
+      background:#2563eb;
+      color:white;
+      padding:14px;
+      text-align:left;
+    }
+
+    table td{
+      border:1px solid #ddd;
+      padding:12px;
+    }
+
+    .highlight{
+      background:#eff6ff;
+      border-left:5px solid #2563eb;
+      padding:18px;
+      margin:20px 0;
+      border-radius:8px;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:50px;
+      color:#666;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      .container{
+        padding:20px;
+      }
+
+      .header h1{
+        font-size:30px;
+      }
+
+      table{
+        display:block;
+        overflow-x:auto;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>Understanding Network Ports in Cybersecurity</h1>
+    <p>Well-Known Ports, Registered Ports & Dynamic Ports Explained</p>
+  </div>
+
+  <p>
+    Network ports are logical communication endpoints used by computers and servers to exchange data over a network. 
+    Every service running on a device communicates using a specific port number.
+  </p>
+
+  <div class="highlight">
+    <strong>Example:</strong> When you open a website, your browser usually connects using Port 80 (HTTP) or Port 443 (HTTPS).
+  </div>
+
+  <h2>What is a Port?</h2>
+
+  <p>
+    A port is a virtual point where network connections begin and end. Ports help identify specific services running on a system.
+  </p>
+
+  <ul>
+    <li>IP Address identifies the device</li>
+    <li>Port Number identifies the service/application</li>
+  </ul>
+
+  <p>
+    Example:
+  </p>
+
+  <div class="highlight">
+    192.168.1.10:443
+    <br><br>
+    Here:
+    <br>
+    IP Address → 192.168.1.10
+    <br>
+    Port → 443 (HTTPS)
+  </div>
+
+  <h2>Types of Ports</h2>
+
+  <table>
+    <tr>
+      <th>Port Range</th>
+      <th>Category</th>
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>0 – 1023</td>
+      <td>Well-Known Ports</td>
+      <td>Reserved for standard services</td>
+    </tr>
+
+    <tr>
+      <td>1024 – 49151</td>
+      <td>Registered Ports</td>
+      <td>Used by applications and vendors</td>
+    </tr>
+
+    <tr>
+      <td>49152 – 65535</td>
+      <td>Dynamic/Private Ports</td>
+      <td>Temporary ports for client communication</td>
+    </tr>
+  </table>
+
+  <h2>Well-Known Ports (0–1023)</h2>
+
+  <p>
+    These ports are reserved for widely used internet services and protocols.
+  </p>
+
+  <table>
+    <tr>
+      <th>Port</th>
+      <th>Protocol</th>
+      <th>Service</th>
+      <th>Use</th>
+    </tr>
+
+    <tr>
+      <td>20</td>
+      <td>TCP</td>
+      <td>FTP (Data)</td>
+      <td>File Transfer Data</td>
+    </tr>
+
+    <tr>
+      <td>21</td>
+      <td>TCP</td>
+      <td>FTP (Control)</td>
+      <td>File Transfer Commands</td>
+    </tr>
+
+    <tr>
+      <td>22</td>
+      <td>TCP/UDP</td>
+      <td>SSH</td>
+      <td>Secure Remote Login</td>
+    </tr>
+
+    <tr>
+      <td>23</td>
+      <td>TCP</td>
+      <td>Telnet</td>
+      <td>Insecure Remote Access</td>
+    </tr>
+
+    <tr>
+      <td>25</td>
+      <td>TCP</td>
+      <td>SMTP</td>
+      <td>Email Sending</td>
+    </tr>
+
+    <tr>
+      <td>53</td>
+      <td>TCP/UDP</td>
+      <td>DNS</td>
+      <td>Domain Name Resolution</td>
+    </tr>
+
+    <tr>
+      <td>67/68</td>
+      <td>UDP</td>
+      <td>DHCP</td>
+      <td>Automatic IP Assignment</td>
+    </tr>
+
+    <tr>
+      <td>80</td>
+      <td>TCP</td>
+      <td>HTTP</td>
+      <td>Web Traffic (Unsecured)</td>
+    </tr>
+
+    <tr>
+      <td>110</td>
+      <td>TCP</td>
+      <td>POP3</td>
+      <td>Email Receiving</td>
+    </tr>
+
+    <tr>
+      <td>123</td>
+      <td>UDP</td>
+      <td>NTP</td>
+      <td>Time Synchronization</td>
+    </tr>
+
+    <tr>
+      <td>143</td>
+      <td>TCP</td>
+      <td>IMAP</td>
+      <td>Email Access</td>
+    </tr>
+
+    <tr>
+      <td>161/162</td>
+      <td>UDP</td>
+      <td>SNMP</td>
+      <td>Network Management</td>
+    </tr>
+
+    <tr>
+      <td>389</td>
+      <td>TCP/UDP</td>
+      <td>LDAP</td>
+      <td>Directory Services</td>
+    </tr>
+
+    <tr>
+      <td>443</td>
+      <td>TCP</td>
+      <td>HTTPS</td>
+      <td>Secure Web Traffic</td>
+    </tr>
+
+    <tr>
+      <td>465</td>
+      <td>TCP</td>
+      <td>SMTPS</td>
+      <td>Secure Email Sending</td>
+    </tr>
+
+    <tr>
+      <td>514</td>
+      <td>UDP</td>
+      <td>Syslog</td>
+      <td>System Logging</td>
+    </tr>
+
+    <tr>
+      <td>587</td>
+      <td>TCP</td>
+      <td>SMTP Submission</td>
+      <td>Modern Secure Mail Sending</td>
+    </tr>
+
+    <tr>
+      <td>993</td>
+      <td>TCP</td>
+      <td>IMAPS</td>
+      <td>Secure IMAP</td>
+    </tr>
+
+    <tr>
+      <td>995</td>
+      <td>TCP</td>
+      <td>POP3S</td>
+      <td>Secure POP3</td>
+    </tr>
+
+  </table>
+
+  <h2>Registered / Common Ports (1024–49151)</h2>
+
+  <p>
+    These ports are commonly used by databases, applications, and enterprise services.
+  </p>
+
+  <table>
+
+    <tr>
+      <th>Port</th>
+      <th>Protocol</th>
+      <th>Service</th>
+      <th>Use</th>
+    </tr>
+
+    <tr>
+      <td>1433</td>
+      <td>TCP</td>
+      <td>Microsoft SQL Server</td>
+      <td>Database Service</td>
+    </tr>
+
+    <tr>
+      <td>1521</td>
+      <td>TCP</td>
+      <td>Oracle Database</td>
+      <td>Database Service</td>
+    </tr>
+
+    <tr>
+      <td>3306</td>
+      <td>TCP</td>
+      <td>MySQL</td>
+      <td>Database Service</td>
+    </tr>
+
+    <tr>
+      <td>3389</td>
+      <td>TCP</td>
+      <td>RDP</td>
+      <td>Remote Windows Desktop</td>
+    </tr>
+
+    <tr>
+      <td>5432</td>
+      <td>TCP</td>
+      <td>PostgreSQL</td>
+      <td>Database Service</td>
+    </tr>
+
+    <tr>
+      <td>5900</td>
+      <td>TCP</td>
+      <td>VNC</td>
+      <td>Remote GUI Access</td>
+    </tr>
+
+    <tr>
+      <td>8080</td>
+      <td>TCP</td>
+      <td>HTTP Alternate</td>
+      <td>Web Development / Proxy</td>
+    </tr>
+
+    <tr>
+      <td>8443</td>
+      <td>TCP</td>
+      <td>HTTPS Alternate</td>
+      <td>Secure Web Service</td>
+    </tr>
+
+  </table>
+
+  <h2>Dynamic / Private Ports (49152–65535)</h2>
+
+  <p>
+    These ports are temporary ports assigned automatically by the operating system for client-side communication.
+  </p>
+
+  <div class="highlight">
+    Example:
+    <br><br>
+    Your browser may use a random high-numbered port while connecting to a website on Port 443.
+  </div>
+
+  <h2>TCP vs UDP</h2>
+
+  <table>
+
+    <tr>
+      <th>Feature</th>
+      <th>TCP</th>
+      <th>UDP</th>
+    </tr>
+
+    <tr>
+      <td>Connection</td>
+      <td>Connection-Oriented</td>
+      <td>Connectionless</td>
+    </tr>
+
+    <tr>
+      <td>Reliability</td>
+      <td>Reliable</td>
+      <td>Faster but less reliable</td>
+    </tr>
+
+    <tr>
+      <td>Use Cases</td>
+      <td>Web, Email, SSH</td>
+      <td>Streaming, DNS, Gaming</td>
+    </tr>
+
+  </table>
+
+  <h2>Importance of Ports in Cybersecurity</h2>
+
+  <p>
+    Ports are extremely important in cybersecurity because attackers often target exposed or vulnerable services running on open ports.
+  </p>
+
+  <ul>
+    <li>Open ports may expose sensitive services</li>
+    <li>Attackers use port scanning to identify targets</li>
+    <li>Firewalls control traffic using ports</li>
+    <li>Security analysts monitor suspicious port activity</li>
+  </ul>
+
+  <h2>Common Cybersecurity Tools for Port Analysis</h2>
+
+  <table>
+
+    <tr>
+      <th>Tool</th>
+      <th>Purpose</th>
+    </tr>
+
+    <tr>
+      <td>Nmap</td>
+      <td>Port Scanning & Service Detection</td>
+    </tr>
+
+    <tr>
+      <td>Wireshark</td>
+      <td>Network Packet Analysis</td>
+    </tr>
+
+    <tr>
+      <td>Netstat</td>
+      <td>View Open Ports & Connections</td>
+    </tr>
+
+    <tr>
+      <td>TCPDump</td>
+      <td>Capture Network Traffic</td>
+    </tr>
+
+  </table>
+
+  <h2>Conclusion</h2>
+
+  <p>
+    Understanding network ports is fundamental in networking and cybersecurity. 
+    Ports allow services to communicate efficiently while helping administrators manage and secure systems.
+  </p>
+
+  <p>
+    Whether you're learning ethical hacking, SOC analysis, penetration testing, or system administration, knowledge of ports and protocols is essential.
+  </p>
+
+  <div class="footer">
+    © 2026 Ashray Blog | Networking & Cybersecurity
+  </div>
+
+</div>
+
+</body>
+</html>
