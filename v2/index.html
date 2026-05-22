@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ashray Saluja | Cybersecurity Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+header h1{
+    font-size:3.5rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#dbeafe;
+    margin-bottom:25px;
+}
+
+.button{
+    display:inline-block;
+    background:white;
+    color:#1d4ed8;
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.button:hover{
+    background:#dbeafe;
+}
+
+/* NAVBAR */
+
+nav{
+    background:white;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    margin:0 18px;
+    text-decoration:none;
+    color:#1d4ed8;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#0f172a;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+/* GENERAL CARD */
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    margin-bottom:35px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+/* BLOG SECTION */
+
+.blog-section{
+    margin-top:60px;
+}
+
+.blog-section h2{
+    font-size:2.2rem;
+    margin-bottom:30px;
+    color:#0f172a;
+}
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    gap:30px;
+}
+
+.blog-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition:transform 0.3s ease,
+               box-shadow 0.3s ease;
+    border:1px solid #e5e7eb;
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 14px 30px rgba(0,0,0,0.14);
+}
+
+/* BLOG BANNERS */
+
+.blog-banner{
+    height:190px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+}
+
+.banner1{
+    background:linear-gradient(135deg,#1d4ed8,#0f172a);
+}
+
+.banner2{
+    background:linear-gradient(135deg,#059669,#022c22);
+}
+
+.banner3{
+    background:linear-gradient(135deg,#7c3aed,#312e81);
+}
+
+/* BLOG CONTENT */
+
+.blog-content{
+    padding:28px;
+}
+
+.blog-tag{
+    display:inline-block;
+    background:#dbeafe;
+    color:#1d4ed8;
+    font-size:0.8rem;
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.blog-content h3{
+    color:#0f172a;
+    margin-bottom:12px;
+    font-size:1.3rem;
+}
+
+.blog-content p{
+    color:#555;
+    margin-bottom:22px;
+}
+
+.blog-btn{
+    display:inline-block;
+    background:#1d4ed8;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.blog-btn:hover{
+    background:#0f172a;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+    }
+
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>Ashray Saluja</h1>
+
+    <p>
+        Cybersecurity Researcher • Digital Forensics • Blockchain • Networking
+    </p>
+
+    <a class="button" href="#blogs">
+        Explore Articles
+    </a>
+
+</header>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <a href="#about">About</a>
+    <a href="#blogs">Blogs</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+<!-- MAIN CONTAINER -->
+
+<div class="container">
+
+    <!-- ABOUT -->
+
+    <div class="card" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a cybersecurity and digital forensics professional with strong
+            interests in blockchain technology, networking, public DNS
+            infrastructure, cryptocurrency security, and emerging cyber threats.
+        </p>
+
+        <p>
+            My research focuses on cybersecurity fundamentals, blockchain systems,
+            network protocols, digital investigations, and security analysis.
+        </p>
+
+    </div>
+
+    <!-- PROJECTS -->
+
+    <div class="card">
+
+        <h2>Projects & Research</h2>
+
+        <p>
+            Technical projects and cybersecurity research involving networking,
+            blockchain technology, DNS infrastructure, digital forensics,
+            and system security analysis.
+        </p>
+
+    </div>
+
+    <!-- BLOG SECTION -->
+
+    <div class="blog-section" id="blogs">
+
+        <h2>Latest Cybersecurity & Blockchain Blogs</h2>
+
+        <div class="blog-grid">
+
+            <!-- BLOG 1 -->
+
+            <div class="blog-card">
+
+                <div class="blog-banner banner1">
+                    Blockchain & Bitcoin
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-tag">
+                        Blockchain
+                    </span>
+
+                    <h3>
+                        Introduction to Blockchain and Bitcoin
+                    </h3>
+
+                    <p>
+                        Learn how Bitcoin blocks, mining, Merkle Roots,
+                        transactions, Proof-of-Work, and blockchain architecture work together.
+                    </p>
+
+                    <a class="blog-btn"
+                       href="blog/blockchain.html">
+
+                        Read Article →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- BLOG 2 -->
+
+            <div class="blog-card">
+
+                <div class="blog-banner banner2">
+                    Networking & Ports
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-tag">
+                        Networking
+                    </span>
+
+                    <h3>
+                        Understanding Network Ports in Cybersecurity
+                    </h3>
+
+                    <p>
+                        Explore TCP/UDP ports, HTTP, HTTPS, SSH,
+                        DNS, RDP, databases, and essential network security concepts.
+                    </p>
+
+                    <a class="blog-btn"
+                       href="blog/network-ports.html">
+
+                        Read Article →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- BLOG 3 -->
+
+            <div class="blog-card">
+
+                <div class="blog-banner banner3">
+                    DNS & Cybersecurity
+                </div>
+
+                <div class="blog-content">
+
+                    <span class="blog-tag">
+                        DNS Security
+                    </span>
+
+                    <h3>
+                        Google DNS vs Cloudflare DNS
+                    </h3>
+
+                    <p>
+                        Understand 8.8.8.8 and 1.1.1.1,
+                        DNS resolution, internet infrastructure,
+                        privacy, and DNS security.
+                    </p>
+
+                    <a class="blog-btn"
+                       href="blog/google-vs-cloudflare-dns.html">
+
+                        Read Article →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 Ashray Saluja | Cybersecurity Portfolio
+
+</footer>
+
+</body>
+
+</html>
