@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Networking Research | Ashray Saluja</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#059669,#022c22);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+header h1{
+    font-size:3.5rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#d1fae5;
+    max-width:900px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    background:white;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    margin:0 18px;
+    text-decoration:none;
+    color:#059669;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#022c22;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+/* INTRO SECTION */
+
+.intro-card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    margin-bottom:50px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+.intro-card h2{
+    color:#022c22;
+    margin-bottom:20px;
+}
+
+.intro-card p{
+    color:#555;
+    margin-bottom:18px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    font-size:2.3rem;
+    margin-bottom:35px;
+    color:#022c22;
+}
+
+/* BLOG GRID */
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* BLOG CARD */
+
+.blog-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    border:1px solid #e5e7eb;
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 16px 32px rgba(0,0,0,0.14);
+}
+
+/* BLOG BANNER */
+
+.blog-banner{
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    color:white;
+    font-size:1.6rem;
+    font-weight:bold;
+    background:linear-gradient(135deg,#059669,#022c22);
+}
+
+/* BLOG CONTENT */
+
+.blog-content{
+    padding:30px;
+}
+
+.blog-tag{
+    display:inline-block;
+    background:#d1fae5;
+    color:#059669;
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:0.8rem;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.blog-content h3{
+    font-size:1.4rem;
+    margin-bottom:14px;
+    color:#022c22;
+}
+
+.blog-content p{
+    color:#555;
+    margin-bottom:22px;
+}
+
+.blog-meta{
+    font-size:0.9rem;
+    color:#777;
+    margin-bottom:20px;
+}
+
+.blog-btn{
+    display:inline-block;
+    background:#059669;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+.blog-btn:hover{
+    background:#022c22;
+}
+
+/* UPCOMING */
+
+.upcoming{
+    margin-top:70px;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+}
+
+.upcoming h2{
+    color:#022c22;
+    margin-bottom:20px;
+}
+
+.upcoming ul{
+    padding-left:20px;
+}
+
+.upcoming li{
+    margin-bottom:12px;
+    color:#444;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#666;
+    margin-top:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+    }
+
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>Networking Research</h1>
+
+    <p>
+        Technical articles and educational resources on networking,
+        DNS infrastructure, TCP/IP protocols,
+        internet architecture, ports,
+        and network security fundamentals.
+    </p>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="blockchain.html">Blockchain</a>
+    <a href="cybersecurity.html">Cybersecurity</a>
+
+</nav>
+
+<!-- MAIN CONTAINER -->
+
+<div class="container">
+
+    <!-- INTRO -->
+
+    <div class="intro-card">
+
+        <h2>About This Category</h2>
+
+        <p>
+            This section contains networking-related research articles,
+            technical blogs,
+            and educational content covering DNS,
+            TCP/IP,
+            internet infrastructure,
+            ports,
+            routing,
+            and networking security.
+        </p>
+
+        <p>
+            New networking and infrastructure articles
+            will continuously be added here,
+            building a dedicated networking knowledge hub.
+        </p>
+
+    </div>
+
+    <!-- ARTICLES -->
+
+    <h2 class="section-title">
+        Networking Articles
+    </h2>
+
+    <div class="blog-grid">
+
+        <!-- ARTICLE 1 -->
+
+        <div class="blog-card">
+
+            <div class="blog-banner">
+
+                Network Ports & Protocols
+
+            </div>
+
+            <div class="blog-content">
+
+                <span class="blog-tag">
+                    Ports & Protocols
+                </span>
+
+                <h3>
+                    Understanding Network Ports in Cybersecurity
+                </h3>
+
+                <div class="blog-meta">
+                    Published • Networking • 10 min read
+                </div>
+
+                <p>
+                    Learn about TCP/UDP ports,
+                    HTTP,
+                    HTTPS,
+                    SSH,
+                    DNS,
+                    RDP,
+                    databases,
+                    and networking fundamentals.
+                </p>
+
+                <a class="blog-btn"
+                   href="../blog/network-ports.html">
+
+                    Read Article →
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ARTICLE 2 -->
+
+        <div class="blog-card">
+
+            <div class="blog-banner">
+
+                Public DNS Infrastructure
+
+            </div>
+
+            <div class="blog-content">
+
+                <span class="blog-tag">
+                    DNS Security
+                </span>
+
+                <h3>
+                    Google DNS vs Cloudflare DNS
+                </h3>
+
+                <div class="blog-meta">
+                    Published • DNS • 8 min read
+                </div>
+
+                <p>
+                    Understand 8.8.8.8 and 1.1.1.1,
+                    DNS resolution,
+                    internet infrastructure,
+                    privacy,
+                    and DNS security concepts.
+                </p>
+
+                <a class="blog-btn"
+                   href="../blog/google-vs-cloudflare-dns.html">
+
+                    Read Article →
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- UPCOMING ARTICLE -->
+
+        <div class="blog-card">
+
+            <div class="blog-banner">
+
+                TCP/IP & Routing
+
+            </div>
+
+            <div class="blog-content">
+
+                <span class="blog-tag">
+                    Coming Soon
+                </span>
+
+                <h3>
+                    Understanding TCP/IP Fundamentals
+                </h3>
+
+                <div class="blog-meta">
+                    Upcoming Research Article
+                </div>
+
+                <p>
+                    Learn about TCP/IP layers,
+                    routing,
+                    packet transmission,
+                    switching,
+                    and network communication models.
+                </p>
+
+                <a class="blog-btn"
+                   href="#">
+
+                    Coming Soon
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- UPCOMING -->
+
+    <div class="upcoming">
+
+        <h2>
+            Future Networking Research Topics
+        </h2>
+
+        <ul>
+
+            <li>TCP/IP Handshake</li>
+
+            <li>DNS Spoofing & Cache Poisoning</li>
+
+            <li>Wireshark Packet Analysis</li>
+
+            <li>Routing & Switching Basics</li>
+
+            <li>Subnetting & CIDR</li>
+
+            <li>VPN & DNS Leaks</li>
+
+            <li>Network Packet Structure</li>
+
+            <li>Firewall Fundamentals</li>
+
+            <li>OSI Model Explained</li>
+
+            <li>Network Traffic Analysis</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 Ashray Saluja | Networking Research Portfolio
+
+</footer>
+
+</body>
+
+</html>
