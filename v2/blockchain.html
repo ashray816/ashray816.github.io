@@ -17,7 +17,7 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family:Arial, sans-serif;
     background:#f4f7fb;
     color:#333;
     line-height:1.7;
@@ -29,7 +29,7 @@ header{
     background:linear-gradient(135deg,#1d4ed8,#0f172a);
     color:white;
     text-align:center;
-    padding:90px 20px;
+    padding:100px 20px;
 }
 
 header h1{
@@ -40,11 +40,11 @@ header h1{
 header p{
     font-size:1.2rem;
     color:#dbeafe;
-    max-width:850px;
+    max-width:900px;
     margin:auto;
 }
 
-/* NAVIGATION */
+/* NAVBAR */
 
 nav{
     background:white;
@@ -76,19 +76,19 @@ nav a:hover{
     padding:0 20px;
 }
 
-/* INTRO CARD */
+/* INTRO SECTION */
 
 .intro-card{
     background:white;
     border-radius:20px;
     padding:40px;
-    margin-bottom:45px;
+    margin-bottom:50px;
     box-shadow:0 8px 24px rgba(0,0,0,0.08);
 }
 
 .intro-card h2{
     color:#0f172a;
-    margin-bottom:18px;
+    margin-bottom:20px;
 }
 
 .intro-card p{
@@ -99,9 +99,9 @@ nav a:hover{
 /* SECTION TITLE */
 
 .section-title{
-    font-size:2.2rem;
+    font-size:2.3rem;
+    margin-bottom:35px;
     color:#0f172a;
-    margin-bottom:30px;
 }
 
 /* BLOG GRID */
@@ -116,7 +116,7 @@ nav a:hover{
 
 .blog-card{
     background:white;
-    border-radius:20px;
+    border-radius:22px;
     overflow:hidden;
     box-shadow:0 8px 24px rgba(0,0,0,0.08);
     transition:0.3s ease;
@@ -132,15 +132,15 @@ nav a:hover{
 
 .blog-banner{
     height:200px;
-    background:linear-gradient(135deg,#2563eb,#0f172a);
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    color:white;
-    font-size:1.5rem;
-    font-weight:bold;
     padding:20px;
+    color:white;
+    font-size:1.6rem;
+    font-weight:bold;
+    background:linear-gradient(135deg,#2563eb,#0f172a);
 }
 
 /* BLOG CONTENT */
@@ -161,14 +161,20 @@ nav a:hover{
 }
 
 .blog-content h3{
-    color:#0f172a;
-    margin-bottom:15px;
     font-size:1.4rem;
+    margin-bottom:14px;
+    color:#0f172a;
 }
 
 .blog-content p{
     color:#555;
     margin-bottom:22px;
+}
+
+.blog-meta{
+    font-size:0.9rem;
+    color:#777;
+    margin-bottom:20px;
 }
 
 .blog-btn{
@@ -186,10 +192,10 @@ nav a:hover{
     background:#0f172a;
 }
 
-/* UPCOMING SECTION */
+/* UPCOMING */
 
 .upcoming{
-    margin-top:60px;
+    margin-top:70px;
     background:white;
     border-radius:20px;
     padding:40px;
@@ -197,8 +203,8 @@ nav a:hover{
 }
 
 .upcoming h2{
-    margin-bottom:20px;
     color:#0f172a;
+    margin-bottom:20px;
 }
 
 .upcoming ul{
@@ -255,9 +261,9 @@ footer{
     <h1>Blockchain Research</h1>
 
     <p>
-        Research articles and educational resources on Bitcoin,
-        blockchain architecture, cryptocurrency systems,
-        mining, Merkle Trees, and decentralized technologies.
+        Educational articles and technical research on Bitcoin,
+        blockchain architecture, mining, cryptocurrency systems,
+        decentralized technologies, and blockchain security.
     </p>
 
 </header>
@@ -272,7 +278,7 @@ footer{
 
 </nav>
 
-<!-- MAIN CONTENT -->
+<!-- MAIN CONTAINER -->
 
 <div class="container">
 
@@ -280,23 +286,23 @@ footer{
 
     <div class="intro-card">
 
-        <h2>About Blockchain Research</h2>
+        <h2>About This Category</h2>
 
         <p>
-            Blockchain technology is one of the most revolutionary innovations
-            in cybersecurity, decentralized finance, and digital systems.
+            This section contains all blockchain-related research articles,
+            technical guides, and educational blogs covering Bitcoin,
+            cryptocurrency infrastructure, blockchain security,
+            mining, and decentralized systems.
         </p>
 
         <p>
-            This section explores Bitcoin architecture,
-            transaction validation, mining,
-            Proof-of-Work, Merkle Trees,
-            and blockchain infrastructure fundamentals.
+            New blockchain articles will continuously be added here,
+            creating a dedicated blockchain knowledge hub.
         </p>
 
     </div>
 
-    <!-- BLOG SECTION -->
+    <!-- ARTICLES -->
 
     <h2 class="section-title">
         Blockchain Articles
@@ -304,31 +310,34 @@ footer{
 
     <div class="blog-grid">
 
-        <!-- BLOG 1 -->
+        <!-- ARTICLE 1 -->
 
         <div class="blog-card">
 
             <div class="blog-banner">
 
-                Introduction to Blockchain & Bitcoin
+                Blockchain & Bitcoin
 
             </div>
 
             <div class="blog-content">
 
                 <span class="blog-tag">
-                    Bitcoin
+                    Bitcoin Architecture
                 </span>
 
                 <h3>
-                    Understanding Blockchain Technology
+                    Introduction to Blockchain and Bitcoin
                 </h3>
 
+                <div class="blog-meta">
+                    Published • Blockchain Fundamentals • 12 min read
+                </div>
+
                 <p>
-                    Learn how Bitcoin blocks,
-                    transactions,
-                    mining,
-                    Merkle Roots,
+                    Learn how Bitcoin blocks, transactions,
+                    mining, Merkle Roots,
+                    Proof-of-Work,
                     and blockchain architecture work together.
                 </p>
 
@@ -343,33 +352,123 @@ footer{
 
         </div>
 
+        <!-- FUTURE ARTICLE PLACEHOLDER -->
+
+        <div class="blog-card">
+
+            <div class="blog-banner">
+
+                Ethereum & Smart Contracts
+
+            </div>
+
+            <div class="blog-content">
+
+                <span class="blog-tag">
+                    Coming Soon
+                </span>
+
+                <h3>
+                    Smart Contracts & Ethereum Basics
+                </h3>
+
+                <div class="blog-meta">
+                    Upcoming Research Article
+                </div>
+
+                <p>
+                    Explore Ethereum architecture,
+                    smart contracts,
+                    gas fees,
+                    decentralized applications,
+                    and Web3 infrastructure.
+                </p>
+
+                <a class="blog-btn"
+                   href="#">
+
+                    Coming Soon
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- FUTURE ARTICLE PLACEHOLDER -->
+
+        <div class="blog-card">
+
+            <div class="blog-banner">
+
+                Blockchain Security
+
+            </div>
+
+            <div class="blog-content">
+
+                <span class="blog-tag">
+                    Upcoming
+                </span>
+
+                <h3>
+                    Blockchain Security Risks & Attacks
+                </h3>
+
+                <div class="blog-meta">
+                    Upcoming Research Article
+                </div>
+
+                <p>
+                    Understand 51% attacks,
+                    wallet vulnerabilities,
+                    phishing,
+                    smart contract exploits,
+                    and blockchain attack surfaces.
+                </p>
+
+                <a class="blog-btn"
+                   href="#">
+
+                    Coming Soon
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- UPCOMING ARTICLES -->
+    <!-- UPCOMING -->
 
     <div class="upcoming">
 
         <h2>
-            Upcoming Blockchain Research Topics
+            Future Blockchain Research Topics
         </h2>
 
         <ul>
 
-            <li>Ethereum & Smart Contracts</li>
-
             <li>Proof-of-Stake vs Proof-of-Work</li>
 
-            <li>Blockchain Security Risks</li>
+            <li>Cryptocurrency Wallet Security</li>
 
-            <li>Cryptocurrency Wallets & Private Keys</li>
+            <li>Bitcoin Mining Infrastructure</li>
 
-            <li>DeFi (Decentralized Finance)</li>
+            <li>Consensus Algorithms</li>
 
-            <li>Consensus Mechanisms</li>
+            <li>Blockchain Forensics</li>
 
-            <li>51% Attacks in Blockchain</li>
+            <li>Decentralized Finance (DeFi)</li>
 
-            <li>NFT Infrastructure & Security</li>
+            <li>Smart Contract Vulnerabilities</li>
+
+            <li>Blockchain Scalability Challenges</li>
+
+            <li>Cryptographic Hash Functions</li>
+
+            <li>NFT Security & Infrastructure</li>
 
         </ul>
 
